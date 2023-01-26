@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="farma.css">
+    <link rel="icon" href="Assets/Icons/rudy.png"> 
+    <title>Beat The Readhead!</title>
+  </head>
+  <body>
+
+    <!-- POZIOM GRACZA -->
+    <div id="poziomGracza">
+      <h1 id="lvlTekst">LVL</h1>
+      <h1 id="poziom">1</h1>
+      <progress value="0" id="xp"></progress>
+    </div>
+
+    <!-- PROFIL GRACZA, EKWIPUNEK -->
+    <div id="profilGracza">
+      <h1 id="rozwiń">...</h1>
+      <h1 id="nazwaUżytkownika">Gracz</h1>
+    </div>
+    <div id="ekwipunek"><hr>
+      <div id="ilośćZłota">
+        <img src="Assets/Icons/zloto.png" style="transform: scale(2); position: absolute;">
+        <h1 id="złoto">0</h1>
+      </div><br><br><br>
+      <div id="ilośćRyb">
+        <img src="Assets/Icons/ryba.png" style="transform: scale(2); position: absolute;">
+        <h1 id="ryby">0</h1>
+      </div><br><br><br>
+      <div id="ilośćDrewna">
+        <img src="Assets/Icons/drewno.png" style="transform: scale(2); position: absolute;">
+        <h1 id="drewno">0</h1>
+      </div>
+    </div>
+
+    <!-- POWRÓT DO MAPY -->
+    <a href="index.html"><div id="mapa">
+      <img src="Assets/Icons/mapa.png" id="mapaIkona">
+      <h1 style="font-size: 1.5vw">Mapa</h1>
+    </div></a>
+
+    <!-- SZYNA RYBAK -->
+    <div id="szyna">
+      <img src="Assets/Characters/Szyna.png">
+    </div>
+
+    <!-- AREK FARMER -->
+    <div id="arekFarmer">
+      <img src="Assets/Characters/ArekFarmer.png">
+    </div>
+    <div id="tablicaFarma">
+      <img src="Assets/tablicaFarma.png" style="position: absolute; margin-top: 76vh; margin-left: 45vw;">
+    </div>
+    <h1 id="errorFarma">Masz za mało ryb!</h1>
+
+    <!-- INFO -->
+    <div id="infoFarma">
+      <h1 style="font-size: 2vw; transform: translateY(-0.5vh)">i</h1><br>
+    </div>
+    <h1 id="infoFarmaTekst">Klikaj na szynę aby zbierać ryby a potem sprzedawaj je u Arka</h1>
+
+    <script src="skrypt.js"></script>
+ </body>
+</html>
