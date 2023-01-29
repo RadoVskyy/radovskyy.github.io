@@ -1,0 +1,78 @@
+body {
+  font-family: Comic Sans MS;
+  background: url(Assets/schematyTło.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  user-select: none;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+}
+
+/* 🔽 POWRÓT DO MAPY 🔽 */
+
+#mapa {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  height: 13vh;
+  width: 13vh;
+  text-align: center;
+  box-shadow: 5px 0 10px -2px black;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+#mapa:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+#mapaIkona {
+  height: 3vw;
+  margin-top: 2vh;
+}
+
+/* 🔽 SCHEMATY 🔽 */
+
+.schematy {
+  height: 5vh;
+  width: 40vw;
+  background:rgba(0, 0, 0, 0.4);
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schematyTekst {
+  color: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 0.5vh;
+}
+
+@media (max-width: 1920px){
+  .schematyTekst {
+    margin-top: -0.1vh;
+  }
+}
+
+.schematyIkony {
+  height: 5vh;
+  width: 5vh;
+  background:rgba(0, 0, 0, 0.4);
+  margin-left: 40.5vw;
+}
+
+.schematyZdjęcia {
+  height: 5vh;
+}
