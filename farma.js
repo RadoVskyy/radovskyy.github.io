@@ -1,3 +1,6 @@
+var nighttheme = document.getElementById("nighttheme");
+nighttheme.volume = 0.5;
+
 document.getElementById('arekFarmer').ondragstart = function() { return false; };
 document.getElementById('szyna').ondragstart = function() { return false; };
 document.getElementById('diamentowaSiekiera').ondragstart = function() { return false; };

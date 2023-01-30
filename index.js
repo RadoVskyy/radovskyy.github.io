@@ -1,3 +1,10 @@
+var maintheme = document.getElementById("maintheme");
+maintheme.volume = 0.5;
+
+if(maskaGazowa == "true"){
+  document.getElementById("szynaRadiacja").style.visibility = "visible";
+}
+
 if(budowaMost == "true"){
   document.getElementById("mostCzarodzieja").style.visibility = "visible";
   document.getElementById("budowaMostCzarodzieja").style.visibility = "hidden";
@@ -27,3 +34,4 @@ document.getElementById("budowaMostCzarodzieja").onclick = function(){
     new Audio("Audio/ERROR.mp3").play();
   }
 }
+

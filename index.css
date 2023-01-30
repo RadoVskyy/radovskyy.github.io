@@ -349,6 +349,7 @@ h1 {
   margin-top: 35vh;
   margin-left: 73vw;
   transition: 0.3s;
+  visibility: hidden;
 }
 
 #szynaRadiacja:hover {
