@@ -15,10 +15,10 @@ document.getElementById("arekFarmer").onclick = function(){
     złoto = złoto + 1;
     document.getElementById("złoto").innerHTML = złoto;
     localStorage.setItem("złoto", złoto);
-    new Audio("Audio/SPRZEDAŻ.mp3").play();
+    new Audio("/Audio/SPRZEDAŻ.mp3").play();
   }
   else{
-    new Audio("Audio/ERROR.mp3").play();
+    new Audio("/Audio/ERROR.mp3").play();
     document.getElementById("errorFarma").style.visibility = "visible";
     setTimeout(function () { document.getElementById("errorFarma").style.visibility = "hidden" }, 2000);
   }
@@ -30,7 +30,7 @@ document.getElementById("diamentowaSiekiera").onclick = function(){
   diamentowaSiekiera = true;
   localStorage.setItem("diamentowaSiekiera", diamentowaSiekiera);
   document.getElementById("diamentowaSiekiera").style.visibility = "hidden";
-  new Audio("Audio/ULEPSZENIA.mp3").play();
+  new Audio("/Audio/ULEPSZENIA.mp3").play();
 }
 
 if(diamentowaSiekiera == false){
@@ -44,7 +44,7 @@ document.getElementById("szyna").onclick = function(){
   document.getElementById("xp").value = xp;
   localStorage.setItem("xp", xp)
   if(xp >= (poziom*1000)){
-    new Audio("Audio/LEVEL UP.mp3").play();
+    new Audio("/Audio/LEVEL UP.mp3").play();
     xp = 0;
     document.getElementById("xp").value = xp;
     localStorage.setItem("xp", xp)
@@ -61,7 +61,7 @@ document.getElementById("szyna").onclick = function(){
   }
   document.getElementById("ryby").innerHTML = ryby;
   localStorage.setItem("ryby", ryby);
-  var wodaAudio = new Audio("Audio/WODA.mp3");
+  var wodaAudio = new Audio("/Audio/WODA.mp3");
   wodaAudio.volume = 0.25;
   wodaAudio.play();
 }

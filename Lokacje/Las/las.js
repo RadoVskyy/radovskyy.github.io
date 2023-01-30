@@ -21,14 +21,14 @@ document.getElementById("drzewo").onclick = function(){
     drewno += 10;
     document.getElementById("drewno").innerHTML = drewno;
     localStorage.setItem("drewno", drewno);
-    new Audio("Audio/DRZEWOSPADA.mp3").play();
+    new Audio("/Audio/DRZEWOSPADA.mp3").play();
     drzewoHP = 100;
     document.getElementById("drzewoHP").value = drzewoHP;
     xp = xp + 100;
     document.getElementById("xp").value = xp;
     localStorage.setItem("xp", xp)
     if(xp >= (poziom*1000)){
-      new Audio("Audio/LEVEL UP.mp3").play();
+      new Audio("/Audio/LEVEL UP.mp3").play();
       xp = 0;
       document.getElementById("xp").value = xp;
       localStorage.setItem("xp", xp)
@@ -48,10 +48,10 @@ document.getElementById("konradDrwal").onclick = function(){
     złoto = złoto + 3;
     document.getElementById("złoto").innerHTML = złoto;
     localStorage.setItem("złoto", złoto);
-    new Audio("Audio/SPRZEDAŻ.mp3").play();
+    new Audio("/Audio/SPRZEDAŻ.mp3").play();
   }
   else{
-    new Audio("Audio/ERROR.mp3").play();
+    new Audio("/Audio/ERROR.mp3").play();
     document.getElementById("errorLas").style.visibility = "visible";
     setTimeout(function () { document.getElementById("errorLas").style.visibility = "hidden" }, 2000);
   }

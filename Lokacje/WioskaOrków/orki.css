@@ -273,7 +273,7 @@ h1 {
   margin-top: 10vh;
 }
 
-.nawigacjaPrzyciski.hover {
+.nawigacjaPrzyciski:hover {
   cursor: pointer;
 }
 

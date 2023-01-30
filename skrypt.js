@@ -110,7 +110,7 @@ document.getElementById("rozwiń").onclick = function(){
 // INFO 🔽
 
 document.getElementById("info").onclick = function(){
-  new Audio("Audio/INFO.mp3").play();
+  new Audio("/Audio/INFO.mp3").play();
   document.getElementById("infoTekst").style.visibility = "visible";
   setTimeout(function () { document.getElementById("infoTekst").style.visibility = "hidden" }, 3000);
 }

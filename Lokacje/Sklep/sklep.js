@@ -12,7 +12,7 @@ if(kupnoWędki == false){
 
 document.getElementById("infoWędka").onclick = function(){
   if(document.getElementById("infoTopórTekst").style.visibility = "hidden"){
-    new Audio("Audio/INFO.mp3").play();
+    new Audio("/Audio/INFO.mp3").play();
     document.getElementById("infoWędkaTekst").style.visibility = "visible";
     setTimeout(function () { document.getElementById("infoWędkaTekst").style.visibility = "hidden" }, 3000);
   }
@@ -20,7 +20,7 @@ document.getElementById("infoWędka").onclick = function(){
 
 document.getElementById("infoTopór").onclick = function(){
   if(document.getElementById("infoWędkaTekst").style.visibility = "hidden"){
-    new Audio("Audio/INFO.mp3").play();
+    new Audio("/Audio/INFO.mp3").play();
     document.getElementById("infoTopórTekst").style.visibility = "visible";
     setTimeout(function () { document.getElementById("infoTopórTekst").style.visibility = "hidden" }, 3000);
   }
@@ -32,7 +32,7 @@ document.getElementById("infoTopór").onclick = function(){
 
 document.getElementById("kupWędka").onclick = function(){
   if(kupnoWędki == false && złoto >= 75){
-    new Audio("Audio/SPRZEDAŻ.mp3").play();
+    new Audio("/Audio/SPRZEDAŻ.mp3").play();
     kupnoWędki = true;
     localStorage.setItem("kupnoWędki", kupnoWędki);
     złoto = złoto - 75;
@@ -41,7 +41,7 @@ document.getElementById("kupWędka").onclick = function(){
     document.getElementById("kupWędka").style.visibility = "hidden";
   }
   else if(kupnoWędki == false && złoto < 75){
-    new Audio("Audio/ERROR.mp3").play();
+    new Audio("/Audio/ERROR.mp3").play();
     document.getElementById("zaMałoZłota").style.visibility = "visible";
     setTimeout(function () { document.getElementById("zaMałoZłota").style.visibility = "hidden" }, 2000);
   }
@@ -51,7 +51,7 @@ document.getElementById("kupWędka").onclick = function(){
 
 document.getElementById("kupTopór").onclick = function(){
   if(kupnoToporu == false && złoto >= 400 && poziom >= 15){
-    new Audio("Audio/SPRZEDAŻ.mp3").play();
+    new Audio("/Audio/SPRZEDAŻ.mp3").play();
     kupnoToporu = true;
     localStorage.setItem("kupnoToporu", kupnoToporu);
     złoto = złoto - 400;
@@ -60,7 +60,7 @@ document.getElementById("kupTopór").onclick = function(){
     document.getElementById("kupTopór").style.visibility = "hidden";
   }
   else if(kupnoToporu == false && złoto < 400 || poziom < 15){
-    new Audio("Audio/ERROR.mp3").play();
+    new Audio("/Audio/ERROR.mp3").play();
     document.getElementById("zaMałoZłota").style.visibility = "visible";
     setTimeout(function () { document.getElementById("zaMałoZłota").style.visibility = "hidden" }, 2000);
   }

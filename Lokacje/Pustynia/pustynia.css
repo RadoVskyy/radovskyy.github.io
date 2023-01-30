@@ -197,3 +197,18 @@ h1 {
   height: 3vw;
   margin-top: 2vh;
 }
+
+/* 🔽 ZŁOM 🔽 */
+
+#złom {
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 20vw;
+  transition: 0.3s;
+}
+
+#złom:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+  transition: 0.3s;
+}
