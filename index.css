@@ -340,3 +340,19 @@ h1 {
   height: 6.5vh;
   transition: 0.3s;
 }
+
+/* 🔽 PUSTYNIA 🔽 */
+
+#szynaRadiacja {
+  height: 6.5vh;
+  position: absolute;
+  margin-top: 35vh;
+  margin-left: 73vw;
+  transition: 0.3s;
+}
+
+#szynaRadiacja:hover {
+  cursor: pointer;
+  height: 7vh;
+  transition: 0.3s;
+}
