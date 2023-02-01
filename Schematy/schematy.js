@@ -8,3 +8,7 @@ if(schematMost == "true"){
 if(schematMaskaGazowa == "true"){
   document.getElementById("schematMaskaGazowa").style.color = "green";
 }
+
+if(schematŁom == "true"){
+  document.getElementById("schematŁom").style.color = "green";
+}

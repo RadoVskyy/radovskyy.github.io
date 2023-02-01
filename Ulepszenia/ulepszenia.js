@@ -4,6 +4,10 @@ ulepszeniatheme.play();
 
 // WCZYTYWANIE ZMIENNYCH //
 
+if(łom == false){
+  document.getElementById("ulepszenieŁom").style.background = "rgba(101, 0, 0, 0.4)"
+}
+
 if(diamentowaSiekiera == false){
   document.getElementById("ulepszenieSiekiera").style.background = "rgba(101, 0, 0, 0.4)"
 }
@@ -61,6 +65,16 @@ document.getElementById("ulepszenieMaskaGazowa").onclick = function(){
     new Audio("/Audio/INFO.mp3").play()
     document.getElementById("infoMaskaGazowa").style.visibility = "visible";
     setTimeout(function () { document.getElementById("infoMaskaGazowa").style.visibility = "hidden" }, 2000);
+    setTimeout(function () { tekstNaEkranie = false }, 2000);
+  }
+}
+
+document.getElementById("ulepszenieŁom").onclick = function(){
+  if(tekstNaEkranie == false){
+    tekstNaEkranie = true;
+    new Audio("/Audio/INFO.mp3").play()
+    document.getElementById("infoŁom").style.visibility = "visible";
+    setTimeout(function () { document.getElementById("infoŁom").style.visibility = "hidden" }, 2000);
     setTimeout(function () { tekstNaEkranie = false }, 2000);
   }
 }

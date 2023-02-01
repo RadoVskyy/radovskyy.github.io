@@ -1,4 +1,17 @@
 // POZIOM GRACZA, SZYNA, WCZYTYWANIE ZMIENNYCH 🔽
+
+let łom = false;
+łom = localStorage.getItem("łom");
+if(łom == null){
+  łom = false;
+}
+
+let schematŁom = false;
+schematŁom = localStorage.getItem("schematŁom");
+if(schematŁom == null){
+  schematŁom = false;
+}
+
 let maskaGazowa = false;
 maskaGazowa = localStorage.getItem("maskaGazowa");
 if(maskaGazowa == null){
