@@ -1,3 +1,7 @@
+var ulepszeniatheme = document.getElementById("ulepszeniatheme");
+ulepszeniatheme.volume = "0.6";
+ulepszeniatheme.play();
+
 // WCZYTYWANIE ZMIENNYCH //
 
 if(diamentowaSiekiera == false){

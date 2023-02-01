@@ -41,6 +41,13 @@ if(kupnoWędki == null){
   kupnoWędki = false;
 }
 
+let złom = 0;
+złom = Number(localStorage.getItem("złom"));
+if(złom == null){
+  złom = 0;
+}
+document.getElementById("złom").innerHTML = złom;
+
 let drewno = 0;
 drewno = Number(localStorage.getItem("drewno"));
 if(drewno == null){

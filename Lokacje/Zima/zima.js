@@ -1,3 +1,6 @@
+var zimatheme = document.getElementById("zimatheme");
+zimatheme.volume = 0.5;
+
 document.getElementById('stach').ondragstart = function() { return false; };
 
 if(schematMost == "true"){

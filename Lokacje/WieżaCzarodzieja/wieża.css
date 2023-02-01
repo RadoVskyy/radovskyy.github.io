@@ -170,6 +170,18 @@ h1 {
   transform: translate(1.6vw,-0.6vh);
 }
 
+#ilośćZłomu {
+  position: absolute;
+  transform: translateX(1.3vw);
+  display: block;
+  height: 4vh;
+  width: 10vw;
+}
+
+#złom {
+  text-align: center;
+  transform: translate(1.6vw,-0.6vh);
+}
 
 /* 🔽 POWRÓT DO MAPY 🔽 */
 
