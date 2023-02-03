@@ -216,27 +216,6 @@ h1 {
   margin-top: 2vh;
 }
 
-/* 🔽 SCHEMATY 🔽 */
-
-#schematyPrzycisk {
-  height: 13vh;
-  width: 13vh;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 8px;
-  margin-right: 8px;
-  box-shadow: 5px 5px 10px black;
-  transition: 0.3s;
-}
-
-#schematyPrzycisk:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
 /* 🔽 CRAFTING SCHEMATÓW 🔽 */
 
 #craftingSchematów {
@@ -270,6 +249,7 @@ h1 {
   margin-top: 5vh;
   box-shadow: 3px 3px 5px black;
   transition: 0.3s;
+  transition: visibility 0s linear
 }
 
 .craftingSchematówPrzyciski:hover {
@@ -293,7 +273,6 @@ h1 {
 
 .nawigacjaPrzyciski:hover {
   cursor: pointer;
-  background: rgb(183, 183, 183);
 }
 
 #jeden {
@@ -307,14 +286,6 @@ h1 {
   position: absolute;
 }
 
-#zasobyŁom {
-  visibility: hidden;
-}
-
-#craftingMaskaGazowa {
-  position: absolute;
-}
-
 #zasobyTekst {
   position: absolute;
   margin-left: 65vw;
@@ -322,7 +293,19 @@ h1 {
   font-size: 2vw;
 }
 
+/* ŁOM */
+
 #craftingŁom {
   visibility: hidden;
+  position: absolute;
+}
+
+#zasobyŁom {
+  visibility: hidden;
+}
+
+/* MASKA GAZOWA */
+
+#craftingMaskaGazowa {
   position: absolute;
 }

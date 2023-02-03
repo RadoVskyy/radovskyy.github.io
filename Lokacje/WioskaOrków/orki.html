@@ -46,40 +46,36 @@
       <h1 style="font-size: 1.5vw">Mapa</h1>
     </div></a>
 
-    <!-- SCHEMATY -->
-    <a href="/Schematy/schematy.html">
-      <div id="schematyPrzycisk">
-        <img src="/Assets/Icons/schemat.png" style="height: 7vh; margin-left: 1.5vw; margin-top: 1.5vh;">
-        <h1 style="text-align: center; font-size: 1.2vw">Schematy</h1>
-      </div>
-     </a>
-
      <!-- CRAFTOWANIE SCHEMATÓW -->
      <div id="craftingSchematów">
       <div id="craftingi">
-      <div id="craftingMaskaGazowa">
-        <img src="/Assets/Icons/maskaGazowa.png" class="craftingSchematówZdjęcia"><br>
-        <button id="przyciskMaskaGazowa" class="craftingSchematówPrzyciski">Wytwórz maskę gazową</button>
+        <!-- MASKA GAZOWA -->
+        <div id="craftingMaskaGazowa">
+          <img src="/Assets/Icons/maskaGazowa.png" class="craftingSchematówZdjęcia"><br>
+          <button id="przyciskMaskaGazowa" class="craftingSchematówPrzyciski">Wytwórz maskę gazową</button>
+        </div>
+        <!-- ŁOM -->
+        <div id="craftingŁom">
+          <img src="/Assets/Icons/łom.png" class="craftingSchematówZdjęcia"><br>
+          <button id="przyciskŁom" class="craftingSchematówPrzyciski">Wytwórz łom</button>
+        </div>
       </div>
-      <div id="craftingŁom">
-        <img src="/Assets/Icons/łom.png" class="craftingSchematówZdjęcia"><br>
-        <button id="przyciskŁom" class="craftingSchematówPrzyciski">Wytwórz łom</button>
-      </div>
-      </div>
+
+      <!-- NAWIGACJA -->
       <div id="nawigacja">
         <div class="nawigacjaPrzyciski" id="jeden" style="margin-right: 15vw;"></div>
         <div class="nawigacjaPrzyciski" id="dwa" style="margin-right: 11.5vw;"></div>
         <div class="nawigacjaPrzyciski" id="trzy" style="margin-left: 15vw;"></div>
       </div>
-     </div>
-     <div id="zasoby">
+    </div>
+    <div id="zasoby">
       <h1 id="zasobyTekst">Potrzebne zasoby:</h1>
       <img id="zasobyMaskaGazowa" src="/Assets/maskaGazowaZasoby.png" class="zasoby">
       <img id="zasobyŁom" src="/Assets/łomZasoby.png" class="zasoby">
-     </div>
+    </div>
 
     <audio src="/Audio/SCHEMATYTHEME.mp3" autoplay id="schematytheme" loop></audio>
     <script src="/skrypt.js"></script>
-    <script src="orki.js".js"></script>
+    <script src="orki.js"></script>
   </body>
 </html>

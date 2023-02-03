@@ -1,5 +1,10 @@
 var schematytheme = document.getElementById("schematytheme");
-schematytheme.volume = 0.5;
+if(muzyka == "true"){
+  schematytheme.volume = 0.5;
+}
+else{
+  schematytheme.volume = 0;
+}
 
 if(schematMost == "true"){
   document.getElementById("schematMostCzarodzieja").style.color = "green";

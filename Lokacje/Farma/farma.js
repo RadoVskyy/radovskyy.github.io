@@ -1,5 +1,10 @@
 var nighttheme = document.getElementById("nighttheme");
-nighttheme.volume = 0.5;
+if(muzyka == "true"){
+  nighttheme.volume = 0.5;
+}
+else{
+  nighttheme.volume = 0;
+}
 
 document.getElementById('arekFarmer').ondragstart = function() { return false; };
 document.getElementById('szyna').ondragstart = function() { return false; };

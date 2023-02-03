@@ -1,6 +1,10 @@
 var ulepszeniatheme = document.getElementById("ulepszeniatheme");
-ulepszeniatheme.volume = "0.6";
-ulepszeniatheme.play();
+if(muzyka == "true"){
+  ulepszeniatheme.volume = 0.5;
+}
+else{
+  ulepszeniatheme.volume = 0;
+}
 
 // WCZYTYWANIE ZMIENNYCH //
 

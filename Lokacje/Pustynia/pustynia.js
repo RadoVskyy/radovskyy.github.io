@@ -1,5 +1,10 @@
 var radiacja = document.getElementById("radiacja");
-radiacja.volume = 0.2;
+if(muzyka == "true"){
+  radiacja.volume = 0.2;
+}
+else{
+  radiacja.volume = 0;
+}
 
 document.getElementById('złomKupa').ondragstart = function() { return false; };
 

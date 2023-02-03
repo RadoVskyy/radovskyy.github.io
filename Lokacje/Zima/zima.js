@@ -1,7 +1,16 @@
+// MUZYKA I TECHNICZNE SPRAWY
+
 var zimatheme = document.getElementById("zimatheme");
-zimatheme.volume = 0.5;
+if(muzyka == "true"){
+  zimatheme.volume = 0.5;
+}
+else{
+  zimatheme.volume = 0;
+}
 
 document.getElementById('stach').ondragstart = function() { return false; };
+
+// LOGIKA
 
 if(schematMost == "true"){
   document.getElementById("dajRyby").style.visibility = "hidden";

@@ -57,6 +57,61 @@ h1 {
   }
 }
 
+/* 🔽 USTAWIENIA 🔽 */
+
+#ustawieniaPrzycisk {
+  height: 5vh;
+  width: 5vh;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-bottom: 8px;
+  margin-left: 14vw;
+  box-shadow: 3px 3px 5px black;
+  transition: 0.3s;
+}
+
+#ustawieniaPrzycisk:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#ustawienia {
+  height: 40vh;
+  width: 20vw;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  visibility: hidden;
+}
+
+.ustawieniaPrzyciski {
+  height: 4vh;
+  width: 4vw;
+  font-family: Comic Sans MS;
+  text-shadow: 3px 3px 5px black;
+  background: green;
+  color: white;
+  font-size: 1vw;
+  box-shadow: 3px 3px 5px black;
+  margin-left: 2vw;
+  transform: translateY(-2vh);
+  transition: visibility 0s linear;
+}
+
+.ustawieniaPrzyciski:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 5px royalblue;
+  height: 4.3vh;
+  width: 4.3vw;
+  transition: 0.2s;
+}
+
 /* 🔽 PROFIL GRACZA 🔽 */
 
 #profilGracza {

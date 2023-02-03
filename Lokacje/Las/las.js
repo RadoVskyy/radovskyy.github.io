@@ -1,5 +1,10 @@
 var nighttheme = document.getElementById("nighttheme");
-nighttheme.volume = 0.5;
+if(muzyka == "true"){
+  nighttheme.volume = 0.5;
+}
+else{
+  nighttheme.volume = 0;
+}
 
 document.getElementById('drzewo').ondragstart = function() { return false; };
 document.getElementById('konradDrwal').ondragstart = function() { return false; };

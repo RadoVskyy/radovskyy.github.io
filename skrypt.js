@@ -1,3 +1,11 @@
+// USTAWIENIA 
+
+let muzyka = false;
+muzyka = localStorage.getItem("muzyka");
+if(muzyka == null){
+  muzyka = false;
+}
+
 // POZIOM GRACZA, SZYNA, WCZYTYWANIE ZMIENNYCH 🔽
 
 let łom = false;
@@ -134,3 +142,4 @@ document.getElementById("info").onclick = function(){
   document.getElementById("infoTekst").style.visibility = "visible";
   setTimeout(function () { document.getElementById("infoTekst").style.visibility = "hidden" }, 3000);
 }
+

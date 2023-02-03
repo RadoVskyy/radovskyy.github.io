@@ -237,18 +237,34 @@ h1 {
   font-size: 1vw;
 }
 
+.infoWieża {
+  opacity: 0%;
+  font-size: 1.5vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+/* 🔽 MASKA GAZOWA 🔽 */
+
 #kupSchematMaskaGazowa {
   margin-left: 27.5vw;
   margin-top: 34vh;
   visibility: hidden;
 }
 
-#schematMaskaGazowa:hover ~ #infoSchematMaskaGazowa {
+#kupSchematMaskaGazowa:hover ~ #infoSchematMaskaGazowa {
   opacity: 100%;
 }
 
-#infoSchematMaskaGazowa {
-  text-align: center;
-  opacity: 0%;
-  font-size: 1.5vw;
+/* 🔽 ŁOM 🔽 */
+
+#kupSchematŁom {
+  margin-left: 41vw;
+  margin-top: 65vh;
+  visibility: hidden;
+}
+
+#kupSchematŁom:hover ~ #infoSchematŁom {
+  opacity: 100%;
 }

@@ -1,5 +1,14 @@
+// MUZYKA 
+
 var schematytheme = document.getElementById("schematytheme");
-schematytheme.volume = 0.5;
+if(muzyka == "true"){
+  schematytheme.volume = 0.5;
+}
+else{
+  schematytheme.volume = 0;
+}
+
+// MASKA GAZOWA
 
 if(maskaGazowa == "true"){
   document.getElementById("przyciskMaskaGazowa").style.visibility = "hidden";
@@ -20,17 +29,22 @@ document.getElementById("przyciskMaskaGazowa").onclick = function(){
   }
 }
 
+// ŁOM
+
 if(łom == "true"){
   document.getElementById("przyciskŁom").style.visibility = "hidden";
 }
 
 document.getElementById("przyciskŁom").onclick = function(){
-  if(schematŁom == "true" && złoto >= 500 && łom == false){
+  if(schematŁom == "true" && złoto >= 500 && złom >= 750 && łom == false){
     document.getElementById("przyciskŁom").style.visibility = "hidden";
     new Audio("/Audio/SCHEMATY.mp3").play();
     złoto -= 500
     document.getElementById("złoto").innerHTML = złoto;
     localStorage.setItem("złoto", złoto);
+    złom -= 750;
+    document.getElementById("złom").innerHTML = złom;
+    localStorage.setItem("złom", złom);
     łom = "true";
     localStorage.setItem("łom", łom);
   }

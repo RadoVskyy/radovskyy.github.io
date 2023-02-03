@@ -1,5 +1,45 @@
+// USTAWIENIA 🔽
+
+if(muzyka == "false"){
+  document.getElementById("muzykaPrzycisk").innerHTML = "OFF";
+  document.getElementById("muzykaPrzycisk").style.background = "red";
+}
+
+document.getElementById("muzykaPrzycisk").onclick = function(){
+  if(muzyka == "true"){
+    muzyka = "false";
+    localStorage.setItem("muzyka", muzyka);
+    document.getElementById("muzykaPrzycisk").innerHTML = "OFF";
+    document.getElementById("muzykaPrzycisk").style.background = "red";
+    maintheme.volume = 0;
+  }
+  else{
+    muzyka = "true";
+    localStorage.setItem("muzyka", muzyka);
+    document.getElementById("muzykaPrzycisk").innerHTML = "ON";
+    document.getElementById("muzykaPrzycisk").style.background = "green";
+    maintheme.volume = 0.3;
+  }
+}
+
+document.getElementById("ustawieniaPrzycisk").onclick = function(){
+  if(document.getElementById("ustawienia").style.visibility == "visible"){
+    document.getElementById("ustawienia").style.visibility = "hidden";
+  }
+  else{
+    document.getElementById("ustawienia").style.visibility = "visible";
+  }
+}
+
+// ZMIENNE 🔽
+
 var maintheme = document.getElementById("maintheme");
-maintheme.volume = 0.5;
+if(muzyka == "true"){
+  maintheme.volume = 0.3;
+}
+else{
+  maintheme.volume = 0;
+}
 
 if(maskaGazowa == "true"){
   document.getElementById("szynaRadiacja").style.visibility = "visible";
