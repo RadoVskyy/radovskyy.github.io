@@ -43,7 +43,6 @@ document.getElementById("przyciskŁom").onclick = function(){
     document.getElementById("złoto").innerHTML = złoto;
     localStorage.setItem("złoto", złoto);
     złom -= 750;
-    document.getElementById("złom").innerHTML = złom;
     localStorage.setItem("złom", złom);
     łom = "true";
     localStorage.setItem("łom", łom);

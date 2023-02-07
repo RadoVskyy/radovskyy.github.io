@@ -27,7 +27,6 @@ document.getElementById("stach").onclick = function(){
 document.getElementById("dajRyby").onclick = function(){
   if(ryby >= 5000){
     ryby -= 5000;
-    document.getElementById("ryby").innerHTML = ryby;
     localStorage.setItem("ryby", ryby);
     schematMost = true;
     localStorage.setItem("schematMost", schematMost);

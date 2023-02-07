@@ -1,12 +1,12 @@
-// USTAWIENIA 
+// USTAWIENIA 🔽
 
-let muzyka = false;
+let muzyka = "true";
 muzyka = localStorage.getItem("muzyka");
 if(muzyka == null){
-  muzyka = false;
+  muzyka = "true";
 }
 
-// POZIOM GRACZA, SZYNA, WCZYTYWANIE ZMIENNYCH 🔽
+// POZIOM GRACZA 🔽
 
 let łom = false;
 łom = localStorage.getItem("łom");
@@ -67,14 +67,12 @@ złom = Number(localStorage.getItem("złom"));
 if(złom == null){
   złom = 0;
 }
-document.getElementById("złom").innerHTML = złom;
 
 let drewno = 0;
 drewno = Number(localStorage.getItem("drewno"));
 if(drewno == null){
   drewno = 0;
 }
-document.getElementById("drewno").innerHTML = drewno;
 
 let złoto = 0;
 złoto = Number(localStorage.getItem("złoto"));
@@ -88,8 +86,6 @@ ryby = Number(localStorage.getItem("ryby"));
 if(ryby == null){
   ryby = 0;
 }
-document.getElementById("ryby").innerHTML = ryby;
-
 let poziom = 1;
 poziom = Number(localStorage.getItem("poziom"));
 if(poziom == null || poziom == 0){
@@ -134,6 +130,28 @@ document.getElementById("rozwiń").onclick = function(){
     document.getElementById("ekwipunek").style.visibility = "visible";
   }
 }
+
+document.getElementById("plecak").onclick = function () {
+
+  if(document.getElementById("plecakDiv").style.visibility == "visible") {
+    document.getElementById("plecakDiv").style.visibility = "hidden";
+  }
+  else {
+    document.getElementById("plecakDiv").style.visibility = "visible";
+  }
+}
+
+function plecak(zmienna, czego) {
+
+  document.getElementById("plecakTekst").innerHTML = "Ilość: " + zmienna;
+  document.getElementById("plecakTekst").style.visibility = "visible";
+}
+
+function plecak2() {
+
+  document.getElementById("plecakTekst").style.visibility = "hidden";
+}
+
 
 // INFO 🔽
 

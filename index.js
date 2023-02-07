@@ -1,5 +1,16 @@
 // USTAWIENIA 🔽
 
+document.getElementById("plecak").onclick = function () {
+
+  if(document.getElementById("plecakDiv").style.visibility == "visible") {
+    document.getElementById("plecakDiv").style.visibility = "hidden";
+  }
+  else {
+    document.getElementById("ustawienia").style.visibility = "hidden";
+    document.getElementById("plecakDiv").style.visibility = "visible";
+  }
+}
+
 if(muzyka == "false"){
   document.getElementById("muzykaPrzycisk").innerHTML = "OFF";
   document.getElementById("muzykaPrzycisk").style.background = "red";
@@ -27,6 +38,7 @@ document.getElementById("ustawieniaPrzycisk").onclick = function(){
     document.getElementById("ustawienia").style.visibility = "hidden";
   }
   else{
+    document.getElementById("plecakDiv").style.visibility = "hidden";
     document.getElementById("ustawienia").style.visibility = "visible";
   }
 }

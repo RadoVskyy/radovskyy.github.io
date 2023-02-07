@@ -112,7 +112,7 @@ h1 {
 
 #ekwipunek {
   background: rgba(255, 255, 255, 0.4);
-  height: 60vh;
+  height: 12vh;
   width: 13vw;
   position: fixed;
   bottom: 0;
@@ -121,73 +121,53 @@ h1 {
   visibility: hidden;
 }
 
-#ekwipunek hr { 
-  height: 0.2vw;
-  background: white;
-  border: none;
-  transform: translateY(59.5vh);
-}
-
 @media (max-width: 1920px){
   #ekwipunek hr {
     transform: translateY(59vh)
   }
 }
 
-#ilośćZłota {
+#plecak:hover {
+  cursor: pointer;
+}
+
+#plecakDiv {
+  height: 40vh;
+  width: 30vw;
+  background:rgba(255, 255, 255, 0.4);
+  box-shadow: 3px 3px 5px black;
   position: absolute;
-  transform: translateX(1.3vw);
-  display: block;
-  height: 4vh;
-  width: 10vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  visibility: hidden;
 }
 
-#złoto {
+#plecakTekst {
+  position: relative;
+  color: royalblue;
   text-align: center;
-  transform: translate(1.6vw,-0.6vh);
+  margin-top: 28vh;
+  font-size: 1.5vw;
 }
 
-#ilośćRyb {
+.plecakIkony {
+  height: 5vh;
+}
+
+.zasobyIkony {
+  height: 5vh;
+  width: 5vh;
+  background: royalblue;
+  opacity: 0.8;
+  margin-left: 8px;
+  box-shadow: 3px 3px 5px black;
   position: absolute;
-  transform: translateX(1.3vw);
-  display: block;
-  height: 4vh;
-  width: 10vw;
 }
 
-#ryby {
-  text-align: center;
-  transform: translate(1.6vw,-0.6vh);
-}
-
-#ilośćDrewna {
-  position: absolute;
-  transform: translateX(1.3vw);
-  display: block;
-  height: 4vh;
-  width: 10vw;
-}
-
-#drewno {
-  text-align: center;
-  transform: translate(1.6vw,-0.6vh);
-}
-#drewno {
-  text-align: center;
-  transform: translate(1.6vw,-0.6vh);
-}
-
-#ilośćZłomu {
-  position: absolute;
-  transform: translateX(1.3vw);
-  display: block;
-  height: 4vh;
-  width: 10vw;
-}
-
-#złom {
-  text-align: center;
-  transform: translate(1.6vw,-0.6vh);
+.zasobyIkony:hover {
+  background: white;
 }
 
 /* 🔽 POWRÓT DO MAPY 🔽 */

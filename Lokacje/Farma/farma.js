@@ -15,7 +15,6 @@ document.getElementById('diamentowaSiekiera').ondragstart = function() { return 
 document.getElementById("arekFarmer").onclick = function(){
   if(ryby >= 20){
     ryby = ryby - 20;
-    document.getElementById("ryby").innerHTML = ryby;
     localStorage.setItem("ryby", ryby);
     złoto = złoto + 1;
     document.getElementById("złoto").innerHTML = złoto;
@@ -64,7 +63,6 @@ document.getElementById("szyna").onclick = function(){
   else{
     ryby = ryby + 2;
   }
-  document.getElementById("ryby").innerHTML = ryby;
   localStorage.setItem("ryby", ryby);
   var wodaAudio = new Audio("/Audio/WODA.mp3");
   wodaAudio.volume = 0.25;

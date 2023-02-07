@@ -17,28 +17,32 @@
     </div>
 
     <!-- PROFIL GRACZA, EKWIPUNEK -->
-    <div id="profilGracza">
-      <h1 id="rozwiń">...</h1>
-      <h1 id="nazwaUżytkownika">Gracz</h1>
+  <div id="profilGracza">
+    <h1 id="rozwiń">...</h1>
+    <h1 id="nazwaUżytkownika">Gracz</h1>
+  </div>
+  <div id="ekwipunek">
+    <div id="złotoDiv">
+      <img src="/Assets/Icons/zloto.png" style="height: 5vh; margin-left: 8px;">
+      <h1 style="text-align: center; margin-left: 2vw; margin-top: -4.5vh;" id="złoto">0</h1>
+    </div><hr style="height: 0.15vh; border: none; background: white; margin-top: 1vh;">
+    <img id="plecak" src="/Assets/Icons/plecak.png" style="height: 5vh; margin-left: 8px; margin-top: 4px; margin-bottom: 4px;">
+    <hr style="position: absolute; height: 0.35vh; border: none; background: white; width: 13vw; transform: translateY(-0.4vh)">
+  </div>
+  <div id="plecakDiv">
+    <h1 style="text-align: center; font-size: 2vw;">Zasoby</h1><hr style="height: 0.15vh; border: none; background: white; margin-top: 1vh;">
+    <div class="zasobyIkony" id="plecakRyby" onmouseenter="plecak(ryby)" onmouseleave="plecak2()">
+      <img src="/Assets/Icons/ryba.png" class="plecakIkony">
     </div>
-    <div id="ekwipunek"><hr>
-      <div id="ilośćZłota">
-        <img src="/Assets/Icons/zloto.png" style="transform: scale(2); position: absolute;">
-        <h1 id="złoto">0</h1>
-      </div><br><br><br>
-      <div id="ilośćRyb">
-        <img src="/Assets/Icons/ryba.png" style="transform: scale(2); position: absolute;">
-        <h1 id="ryby">0</h1>
-      </div><br><br><br>
-      <div id="ilośćDrewna">
-        <img src="/Assets/Icons/drewno.png" style="transform: scale(2); position: absolute;">
-        <h1 id="drewno">0</h1>
-      </div><br><br><br>
-      <div id="ilośćZłomu">
-        <img src="/Assets/Icons/złom.png" style="transform: scale(2); position: absolute;">
-        <h1 id="złom">0</h1>
-      </div>
+    <div class="zasobyIkony" id="plecakDrewno" style="margin-left: 6.3vh;" onmouseenter="plecak(drewno)" onmouseleave="plecak2()">
+      <img src="/Assets/Icons/drewno.png" class="plecakIkony" style="height: 4.5vh; margin-left: 0.1vw;">
     </div>
+    <div class="zasobyIkony" id="plecakZłom" style="margin-left: 12vh;" onmouseenter="plecak(złom)" onmouseleave="plecak2()">
+      <img src="/Assets/Icons/złom.png" class="plecakIkony" style="height: 4.5vh; margin-left: 0.1vw; margin-top: 0.2vh;">
+    </div>
+
+    <h1 id="plecakTekst"></h1>
+  </div>
 
     <!-- POWRÓT DO MAPY -->
     <a href="/index.html"><div id="mapa">
