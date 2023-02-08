@@ -17,7 +17,7 @@ h1 {
 
 #poziomGracza {
   position: fixed;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   height: 13vh;
   width: 13vh;
   text-align: center;
@@ -64,7 +64,7 @@ h1 {
 #profilGracza {
   height: 5vh;
   width: 13vw;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
   margin-bottom: 8px;
@@ -111,7 +111,7 @@ h1 {
 /* 🔽 EKWIPUNEK 🔽 */
 
 #ekwipunek {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   height: 12vh;
   width: 13vw;
   position: fixed;
@@ -134,7 +134,7 @@ h1 {
 #plecakDiv {
   height: 40vh;
   width: 30vw;
-  background:rgba(255, 255, 255, 0.4);
+  background:rgba(0, 0, 0, 0.7);
   box-shadow: 3px 3px 5px black;
   position: absolute;
   top: 50%;
@@ -144,12 +144,11 @@ h1 {
   visibility: hidden;
 }
 
-#plecakTekst {
+.plecakTekst {
   position: relative;
-  color: royalblue;
   text-align: center;
-  margin-top: 28vh;
-  font-size: 1.5vw;
+  margin-top: -2.45vw;
+  margin-left: 2vw;
 }
 
 .plecakIkony {
@@ -158,7 +157,7 @@ h1 {
 
 .zasobyIkony {
   height: 5vh;
-  width: 5vh;
+  width: 18vh;
   background: royalblue;
   opacity: 0.8;
   margin-left: 8px;
@@ -166,15 +165,11 @@ h1 {
   position: absolute;
 }
 
-.zasobyIkony:hover {
-  background: white;
-}
-
 /* 🔽 POWRÓT DO MAPY 🔽 */
 
 #mapa {
   position: fixed;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   height: 13vh;
   width: 13vh;
   text-align: center;

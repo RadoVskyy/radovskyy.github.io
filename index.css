@@ -196,12 +196,11 @@ h1 {
   visibility: hidden;
 }
 
-#plecakTekst {
+.plecakTekst {
   position: relative;
-  color: royalblue;
   text-align: center;
-  margin-top: 28vh;
-  font-size: 1.5vw;
+  margin-top: -2.45vw;
+  margin-left: 2vw;
 }
 
 .plecakIkony {
@@ -210,16 +209,12 @@ h1 {
 
 .zasobyIkony {
   height: 5vh;
-  width: 5vh;
+  width: 18vh;
   background: royalblue;
   opacity: 0.8;
   margin-left: 8px;
   box-shadow: 3px 3px 5px black;
   position: absolute;
-}
-
-.zasobyIkony:hover {
-  background: white;
 }
 
 /* 🔽 ULEPSZENIA 🔽 */

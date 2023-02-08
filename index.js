@@ -1,5 +1,7 @@
 // USTAWIENIA 🔽
 
+dragElement(document.getElementById("ustawienia"));
+
 document.getElementById("plecak").onclick = function () {
 
   if(document.getElementById("plecakDiv").style.visibility == "visible") {

@@ -25,6 +25,7 @@ document.getElementById("drzewo").onclick = function(){
   if(drzewoHP == 0){
     drewno += 10;
     localStorage.setItem("drewno", drewno);
+    document.getElementById("drewno").innerHTML = drewno;
     new Audio("/Audio/DRZEWOSPADA.mp3").play();
     drzewoHP = 100;
     document.getElementById("drzewoHP").value = drzewoHP;
@@ -48,6 +49,7 @@ document.getElementById("konradDrwal").onclick = function(){
   if(drewno >= 30){
     drewno = drewno - 30;
     localStorage.setItem("drewno", drewno);
+    document.getElementById("drewno").innerHTML = drewno;
     złoto = złoto + 3;
     document.getElementById("złoto").innerHTML = złoto;
     localStorage.setItem("złoto", złoto);

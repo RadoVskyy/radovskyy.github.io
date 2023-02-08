@@ -28,6 +28,7 @@ document.getElementById("dajRyby").onclick = function(){
   if(ryby >= 5000){
     ryby -= 5000;
     localStorage.setItem("ryby", ryby);
+    document.getElementById("ryby").innerHTML = ryby;
     schematMost = true;
     localStorage.setItem("schematMost", schematMost);
     new Audio("/Audio/ULEPSZENIA.mp3").play();

@@ -67,12 +67,14 @@ złom = Number(localStorage.getItem("złom"));
 if(złom == null){
   złom = 0;
 }
+document.getElementById("złom").innerHTML = złom;
 
 let drewno = 0;
 drewno = Number(localStorage.getItem("drewno"));
 if(drewno == null){
   drewno = 0;
 }
+document.getElementById("drewno").innerHTML = drewno;
 
 let złoto = 0;
 złoto = Number(localStorage.getItem("złoto"));
@@ -86,6 +88,8 @@ ryby = Number(localStorage.getItem("ryby"));
 if(ryby == null){
   ryby = 0;
 }
+document.getElementById("ryby").innerHTML = ryby;
+
 let poziom = 1;
 poziom = Number(localStorage.getItem("poziom"));
 if(poziom == null || poziom == 0){
@@ -111,8 +115,11 @@ if(nazwaUzytkownika == null){
 document.getElementById("nazwaUżytkownika").innerHTML = nazwaUzytkownika;
 document.getElementById("nazwaUżytkownika").onclick = function(){
   nazwaUzytkownika = window.prompt("Wprowadź nazwę użytkownika (MAX 10 ZNAKÓW!): ");
-  if(nazwaUzytkownika.length > 10){
-    alert("Za dużo znaków!")
+  if(nazwaUzytkownika.length > 10) {
+    alert("Za dużo znaków!");
+  }
+  else if(nazwaUzytkownika.length < 1) {
+    alert("Za mało znaków!");
   }
   else{
     document.getElementById("nazwaUżytkownika").innerHTML = nazwaUzytkownika;
@@ -123,8 +130,11 @@ document.getElementById("nazwaUżytkownika").onclick = function(){
 // EKWIPUNEK 🔽
 
 document.getElementById("rozwiń").onclick = function(){
-  if(document.getElementById("ekwipunek").style.visibility == "visible"){
+  if(document.getElementById("ekwipunek").style.visibility == "visible") {
     document.getElementById("ekwipunek").style.visibility = "hidden";
+    if(document.getElementById("plecakDiv").style.visibility == "visible") {
+      document.getElementById("plecakDiv").style.visibility = "hidden";
+    }
   }
   else{
     document.getElementById("ekwipunek").style.visibility = "visible";
@@ -141,17 +151,48 @@ document.getElementById("plecak").onclick = function () {
   }
 }
 
-function plecak(zmienna, czego) {
+dragElement(document.getElementById("plecakDiv"));
 
-  document.getElementById("plecakTekst").innerHTML = "Ilość: " + zmienna;
-  document.getElementById("plecakTekst").style.visibility = "visible";
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
 }
-
-function plecak2() {
-
-  document.getElementById("plecakTekst").style.visibility = "hidden";
-}
-
 
 // INFO 🔽
 

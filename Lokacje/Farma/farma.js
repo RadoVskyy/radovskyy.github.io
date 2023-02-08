@@ -16,6 +16,7 @@ document.getElementById("arekFarmer").onclick = function(){
   if(ryby >= 20){
     ryby = ryby - 20;
     localStorage.setItem("ryby", ryby);
+    document.getElementById("ryby").innerHTML = ryby;
     złoto = złoto + 1;
     document.getElementById("złoto").innerHTML = złoto;
     localStorage.setItem("złoto", złoto);
@@ -64,6 +65,7 @@ document.getElementById("szyna").onclick = function(){
     ryby = ryby + 2;
   }
   localStorage.setItem("ryby", ryby);
+  document.getElementById("ryby").innerHTML = ryby;
   var wodaAudio = new Audio("/Audio/WODA.mp3");
   wodaAudio.volume = 0.25;
   wodaAudio.play();

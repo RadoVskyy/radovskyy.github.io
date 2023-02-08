@@ -14,6 +14,7 @@ document.getElementById("złomKupa").onclick = function(){
   złomAudio.play();
   złom += 1;
   localStorage.setItem("złom", złom);
+  document.getElementById("złom").innerHTML = złom;
   xp = xp + 20;
   document.getElementById("xp").value = xp;
   localStorage.setItem("xp", xp)
