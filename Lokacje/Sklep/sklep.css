@@ -119,8 +119,12 @@ h1 {
 }
 
 @media (max-width: 1920px){
-  #ekwipunek hr {
-    transform: translateY(59vh)
+  #ekwipunek {
+    height: 14.5vh;
+  }
+
+  #mediaZłoto {
+   transform: translateY(0.8vh); 
   }
 }
 
@@ -146,6 +150,21 @@ h1 {
   text-align: center;
   margin-top: -2.45vw;
   margin-left: 2vw;
+}
+
+@media (max-width: 1920px) {
+  .plecakTekst {
+    margin-top: -2.7vw;
+    font-size: 1.5vw;
+  }
+
+  #drewno {
+    transform: translateY(-0.5vh);
+  }
+
+  #złom {
+    transform: translateY(-0.5vh);
+  }
 }
 
 .plecakIkony {

@@ -65,7 +65,18 @@ if(budowaMost == "true"){
   document.getElementById("karol").style.visibility = "visible";
 }
 
+if(schematMost == "true") {
+  document.getElementById("stach").style.visibility = "hidden";
+}
+
 document.getElementById('mostCzarodzieja').ondragstart = function() { return false; };
+document.getElementById('stach').ondragstart = function() { return false; };
+document.getElementById('arek').ondragstart = function() { return false; };
+document.getElementById('konrad').ondragstart = function() { return false; };
+document.getElementById('konradLas').ondragstart = function() { return false; };
+document.getElementById('karol').ondragstart = function() { return false; };
+document.getElementById('szynaOrk').ondragstart = function() { return false; };
+document.getElementById('szynaRadiacja').ondragstart = function() { return false; };
 
 // BUDOWA MOSTU CZARODZIEJA 🔽
 

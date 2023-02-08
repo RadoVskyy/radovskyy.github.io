@@ -174,8 +174,12 @@ h1 {
 }
 
 @media (max-width: 1920px){
-  #ekwipunek hr {
-    transform: translateY(59vh)
+  #ekwipunek {
+    height: 14.5vh;
+  }
+
+  #mediaZłoto {
+   transform: translateY(0.8vh); 
   }
 }
 
@@ -201,6 +205,21 @@ h1 {
   text-align: center;
   margin-top: -2.45vw;
   margin-left: 2vw;
+}
+
+@media (max-width: 1920px) {
+  .plecakTekst {
+    margin-top: -2.7vw;
+    font-size: 1.5vw;
+  }
+
+  #drewno {
+    transform: translateY(-0.5vh);
+  }
+
+  #złom {
+    transform: translateY(-0.5vh);
+  }
 }
 
 .plecakIkony {
@@ -309,6 +328,7 @@ h1 {
   position: absolute;
   transition: 0.3s;
   transform: translate(59vw, 74vh);
+  transition: visibility 0s linear;
 }
 
 #stach:hover {
@@ -326,6 +346,7 @@ h1 {
   margin-left: 25vw;
   transform: rotate(-20deg);
   visibility: hidden;
+  transition: visibility 0s linear;
 }
 
 #budowaMostCzarodzieja {
@@ -334,6 +355,7 @@ h1 {
   margin-top: 80vh;
   margin-left: 27vw;
   transition: 0.3s;
+  transition: visibility 0s linear;
 }
 
 #budowaMostCzarodzieja:hover {
