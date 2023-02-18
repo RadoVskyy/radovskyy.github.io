@@ -100,3 +100,55 @@
 .menu-buttons:hover {
    background: rgba(255, 0, 0, 0.4);
 }
+
+/* Options */
+
+#options {
+   position: absolute;
+   height: 50vh;
+   width: 25vw;
+   backdrop-filter: blur(1.5rem);
+   box-shadow: 0px 0px 50px black;
+   border-radius: 10px;
+   top: 50%;
+   left: 5vw;
+   transform: translate(-35vw, -50%);
+
+   transition: transform 3s ease-in-out;
+}
+
+#options h1 {
+   color: white;
+   font-size: 2.5vw;
+   text-align: center;
+   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.options-buttons {
+   display: flex;
+   height: 5vh;
+   width: 12vw;
+   background: transparent;
+   color: rgb(3, 201, 3);
+   font-family: Century Gothic;
+   font-size: 1.3vw;
+   font-weight: bold;
+   border: 3px solid rgb(3, 201, 3);
+   align-items: center;
+   justify-content: center;
+   margin-top: 4vh;
+   cursor: pointer;
+   border-radius: 0.7vw;
+   left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto; 
+   text-shadow: 0px 0px 10px black;
+   box-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em inset, 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em;
+
+   transition: 0.3s;
+}
+
+.options-buttons:hover {
+   width: 14vw;
+}
