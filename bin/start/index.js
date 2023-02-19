@@ -1,23 +1,3 @@
-// Fullscreen
-
-function fullscreen() {
-   document.getElementById("fullscreen-alert").style.opacity = "0%";
-   setTimeout( function() {document.getElementById("fullscreen-alert".style.display = "none")}, 2000)
-   document.getElementById("background-video").style.filter = "blur(0rem)";
-   setTimeout( function() {document.getElementById("menu").style.opacity = "100%"}, 1500);
-}
-
-window.onresize = function (event) {
-   var maxHeight = window.screen.height,
-       maxWidth = window.screen.width,
-       curHeight = window.innerHeight,
-       curWidth = window.innerWidth;
-
-   if (maxWidth == curWidth && maxHeight == curHeight) {
-       setTimeout(fullscreen, 500);
-   }
-}
-
 // Options
 
 document.getElementById("options-button").onclick = function(){
@@ -26,6 +6,10 @@ document.getElementById("options-button").onclick = function(){
     }
     else {
         document.getElementById("options").style.transform = "translate(0vw, -50%)"
+    }
+    if (music == "false"){
+        document.getElementById("music-button").style.color = "gray";
+        document.getElementById("music-button").style.border = "3px solid gray";
     }
 }
 
@@ -44,3 +28,29 @@ document.getElementById("music-button").onclick = function(){
     }
 }
 
+// New game
+
+document.getElementById("newgame-button").onclick = function(){
+    window.location.href = "/bin/base/intro.html";
+}
+
+// Fullscreen
+
+function fullscreen() {
+    document.getElementById("fullscreen-alert").style.opacity = "0%";
+    setTimeout( function() {document.getElementById("fullscreen-alert".style.display = "none")}, 2000)
+    document.getElementById("background-video").style.filter = "blur(0rem)";
+    setTimeout( function() {document.getElementById("menu").style.opacity = "100%"}, 1500);
+ }
+ 
+ window.onresize = function (event) {
+    var maxHeight = window.screen.height,
+        maxWidth = window.screen.width,
+        curHeight = window.innerHeight,
+        curWidth = window.innerWidth;
+ 
+    if (maxWidth == curWidth && maxHeight == curHeight) {
+        setTimeout(fullscreen, 500);
+    }
+ }
+ 
