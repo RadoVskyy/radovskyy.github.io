@@ -1,6 +1,7 @@
 // Options
 
 document.getElementById("options-button").onclick = function(){
+    new Audio("/assets/audio/menu.mp3").play();
     if (document.getElementById("options").style.transform == "translate(0vw, -50%)"){
         document.getElementById("options").style.transform = "translate(-35vw, -50%)"
     }
@@ -14,6 +15,7 @@ document.getElementById("options-button").onclick = function(){
 }
 
 document.getElementById("music-button").onclick = function(){
+    new Audio("/assets/audio/menu.mp3").play();
     if (music == "true"){
         music = "false";
         localStorage.setItem("music", music);
@@ -31,7 +33,9 @@ document.getElementById("music-button").onclick = function(){
 // New game
 
 document.getElementById("newgame-button").onclick = function(){
-    window.location.href = "/bin/base/intro.html";
+    if (confirm("Are you sure you want to start a new game?\nAll progress will be lost!") == true){
+        window.location.href = "/bin/base/intro.html";
+    }
 }
 
 // Fullscreen
