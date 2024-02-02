@@ -8,13 +8,23 @@ function odpal(){
     const muza2 = new Audio('cyce.mp3').play();
     pobierzPlik('karoPro.png');
     otworzLatajaceOkno();
-    otworzLatajaceOkno2()
+    otworzLatajaceOkno2();
+    otworzLatajaceOkno();
+    otworzLatajaceOkno2();
+    otworzLatajaceOkno();
+    otworzLatajaceOkno2();
+    otworzLatajaceOkno();
+    otworzLatajaceOkno2();
+    otworzLatajaceOkno();
+    otworzLatajaceOkno2();
+    pobierzPlik('karoPro.png');
+    pobierzPlik('karoPro.png');
+    pobierzPlik('karoPro.png');
+    pobierzPlik('karoPro.png');
+    pobierzPlik('karoPro.png');
     
     intervalId = setInterval(function() {
       console.log('nyger');
-      pobierzPlik('karoPro.png');
-      otworzLatajaceOkno();
-      otworzLatajaceOkno2()
     }, 1000);
 
     muza1Gra === false ? muza() : null;
