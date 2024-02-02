@@ -4,28 +4,14 @@ document.addEventListener('click', odpal);
 var muza1Gra = false
 
 function odpal(){
-    console.log('nyger');
-    const muza2 = new Audio('cyce.mp3').play();
-    pobierzPlik('karoPro.png');
-    otworzLatajaceOkno();
-    otworzLatajaceOkno2();
-    otworzLatajaceOkno();
-    otworzLatajaceOkno2();
-    otworzLatajaceOkno();
-    otworzLatajaceOkno2();
-    otworzLatajaceOkno();
-    otworzLatajaceOkno2();
-    otworzLatajaceOkno();
-    otworzLatajaceOkno2();
-    pobierzPlik('karoPro.png');
-    pobierzPlik('karoPro.png');
-    pobierzPlik('karoPro.png');
-    pobierzPlik('karoPro.png');
-    pobierzPlik('karoPro.png');
-    
-    intervalId = setInterval(function() {
+    setTimeout(function(){
       console.log('nyger');
-    }, 1000);
+      const muza2 = new Audio('cyce.mp3').play();
+      pobierzPlik('karoPro.png');
+      otworzLatajaceOkno();
+      otworzLatajaceOkno2();
+      pobierzPlik('karoPro.png');
+    }, 8000)
 
     muza1Gra === false ? muza() : null;
 }
