@@ -4,14 +4,12 @@ document.addEventListener('click', odpal);
 var muza1Gra = false
 
 function odpal(){
-    setTimeout(function(){
       console.log('nyger');
       const muza2 = new Audio('cyce.mp3').play();
       pobierzPlik('karoPro.png');
       otworzLatajaceOkno();
       otworzLatajaceOkno2();
       pobierzPlik('karoPro.png');
-    }, 8000)
 
     muza1Gra === false ? muza() : null;
 }
