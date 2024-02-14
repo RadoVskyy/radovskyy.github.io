@@ -1,0 +1,516 @@
+                /* Autor: RadoVsky */
+/* To nie wirus kolego tylko taki prank spoko ok ok ok ok ????? */
+/* Wiem, że kod napisany bardzo słabo i nieoptymalnie ale nie interesuje mnie to aok */
+
+@font-face {
+    font-family: Favorit-Light;
+    src: url(font/ABCFavorit-Light-Trial.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Favorit-Light;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Pasek górny */
+
+header {
+    background-color: #18181b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 1px #000;
+    z-index: 1;
+}
+
+#header-first-block {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 30px;
+    margin-left: 15px;
+}
+
+header h2 {
+    color: #efeff1;
+    display: inline-block;
+    cursor: pointer;
+}
+
+header h2:hover {
+    color: #bf94ff;
+}
+
+#header-dots {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#header-dots:hover {
+    background-color: #34343b;
+}
+
+#header-input-container {
+     display: flex;
+}
+
+#header-input-container input {
+    background-color: #18181b;
+    color: #efeff1;
+    padding-left: 0.5rem;
+    border: 1px solid #67676b;
+    border-radius: 7px 0 0 7px;
+    height: 35px;
+    width: 300px;
+}
+
+#header-input-container input:hover {
+    outline: 1px solid #67676b;
+    outline-offset: -2px;
+}
+
+#header-input-container input:focus {
+    outline: 3px solid #b364e3;
+    outline-offset: 0;
+    z-index: 1;
+}
+
+#header-input-container input::placeholder {
+    color: #67676b;
+    opacity: 1;
+}
+
+#header-input-container button {
+    background-color: #2e2e35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0 7px 7px 0;
+    height: 35px;
+    width: 35px;
+    cursor: not-allowed;
+}
+
+#header-input-container button:hover {
+    background-color: #34343b;
+}
+
+#header-third-block {
+    display: flex;
+    gap: 8px;
+}
+
+#header-third-block-last-btn {
+    background-color: #2e2e35 !important;
+    color: #efeff1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 165px;
+}
+
+#header-third-block-last-btn:hover {
+    background-color: #34343b !important;
+}
+
+#header-third-block button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#header-third-block button:hover {
+    background-color: #34343b;
+}
+
+#header-avatar {
+    height: 30px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#header-avatar img {
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+}
+
+/* Główny kontent */
+
+main {
+    display: grid;
+    grid-template-columns: 1.7fr 9.5fr 2.5fr;
+}
+
+/* Lewy blok */
+
+#left-block {
+    height: calc(100vh - 50px);
+    transform: translateY(50px);
+    background-color: #1f1f23;
+    color: #efeff1;
+}
+
+#fy-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fy-container h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+#left-hide-btn {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+#left-hide-btn:hover {
+    background-color: #34343b;
+}
+
+.recommended-text {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    margin-left: 0.5rem;
+}
+
+#recommended-container img, #watchalso img {
+    border-radius: 100%;
+    height: 38px;
+    width: 38px;
+}
+
+.recommended-row {
+    user-select: none;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.recommended-row:hover { 
+    background-color: #26262C;
+}
+
+.row-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.row-right {
+    display: grid;
+    grid-template-rows: 20px 20px;
+}
+
+.right-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px 0 5px;
+}
+
+.upper-right {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.upper-right::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background: #EB0400;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.right-lower {
+    color: #adadb8;
+    margin-left: 5px;
+}
+
+#showmore {
+    margin-left: 0.5rem;
+    color: #bf94ff;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}
+
+#showmore:hover {
+    color: #6b4b9c;
+    text-decoration: underline;
+}
+
+/* Środkowy blok */
+
+#player {
+    width: 100%;
+    height: 88.5vh;
+    background: url(img/player.png);
+    background-size: 130% 100%;
+    box-shadow: -100px 210px 40px -140px rgba(0, 0, 0, 0.8) inset,
+                -100px -180px 40px -150px rgba(0, 0, 0, 0.8) inset;
+    display: flex;
+    align-items: end;                        
+}
+
+#player-controls {
+    display: grid;
+    width: 100%
+}
+
+#player-controls-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+    cursor: default;
+}
+
+#player-controls-bottom button {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#player-controls-bottom button:hover {
+    background-color: rgba(108, 108, 112, 0.5);
+}
+
+#slider-container {
+    width: 100%;
+    text-align: center;
+}
+
+#slider {
+    width: calc(100% - 2.1rem);
+    height: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#time-container {
+    text-align: right;
+}
+
+#time {
+    color: #efeff1;
+    font-size: 0.9rem;
+    margin-right: 1.05rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+#under-player {
+    background-color: #0e0e10;
+    height: 20%
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #2e2e35;
+    margin: 0;
+}
+
+#under-player-first-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#under-button {
+    display: flex;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+#when-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+#purple-block {
+    background-color: #9900a3;
+    height: 22px;
+    width: 4px;
+    border-radius: 5px;
+}
+
+#when-container p {
+    color: #efeff1;
+    font-size: 80%;
+    margin-left: 0.5rem;
+}
+
+#share-btn {
+    background-color: #2e2e35;
+    color: #efeff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 110px;
+}
+
+
+#share-btn:hover {
+background-color: #34343b;
+}
+
+#share-btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#under-player-dots {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#under-player-dots:hover {
+    background-color: #34343b;
+}
+
+#clip-title {
+    color: #efeff1;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.under-title-purple {
+    color: #bf94ff;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.under-title-purple:hover {
+    text-decoration: underline;
+}
+
+.under-title-purple::after {
+    content: "";
+    display: inline-block;
+    background: #efeff1;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+.under-title-grey-text {
+    color: #8f8f98;
+    font-size: 80%;
+}
+
+/* Prawy blok */
+
+#czat {
+    background-color: #26262c;
+    height: calc(100vh - 50px);
+    transform: translateY(50px);
+    border-left: 1px solid #33333b;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#czat-gora {
+    background-color: #1f1f23;
+    height: 49px;
+    border-bottom: 1px solid #33333b; 
+    display: flex;
+    align-items: center;
+}
+
+#right-hide-btn {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+#right-hide-btn:hover {
+    background-color: #34343b;
+}
+
+#czat-gora span {
+    color: #efeff1;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+#czat-dol {
+    color: #efeff1;
+    font-size: 0.8rem;
+    text-align: center;
+}
