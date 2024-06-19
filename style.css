@@ -1,0 +1,73 @@
+@font-face {
+  font-family: hatten;
+  src: url('HATTEN.TTF');
+}
+
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0 ,0, .5);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+form label {
+  color: #fff;
+  font-weight: bold;
+}
+
+form input {
+  height: 25px;
+  margin-bottom: 1.5em;
+  outline: none;
+  font-size: 1em;
+}
+
+#karta {
+  height: 627px;
+  width: 395px;
+  background-image: url('karta.png');
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#zdjecie {
+  width: 192px;
+  height: 237px;
+  padding-top: 167px;
+  padding-left: 28px;
+  display: none;
+  position: absolute;
+}
+
+button {
+  height: 40px;
+  margin-top: 1.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+span {
+  font-family: hatten;
+  font-size: 1.8em;
+  color: #2d2d2d;
+  text-shadow: 0 0 15px #2d2d2d;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 22px;
+  position: absolute;
+}
+
+#imieLabel {
+  margin-top: 473px;
+}
+
+#nazwiskoLabel {
+  margin-top: calc(473px + 22px + 1em);
+}
+
+#stopienLabel {
+  margin-top: calc(473px + 44px + 2em);
+}
