@@ -1,0 +1,37 @@
+body {
+  margin: 25px;
+}
+
+.card {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  display: grid;
+  place-content: center;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 15px;
+  box-shadow: 0 0 20px var(--accent-color), 0 0 20px var(--accent-color) inset;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card:active {
+  scale: 1;
+}
+
+.card svg {
+  filter: drop-shadow(0 0 10px var(--accent-color));
+}
+
+.card span {
+  width: 150px;
+  position: absolute;
+  bottom: -30px;
+  font-size: 1.3em;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karta cwela</title>
+  <link rel="stylesheet" href="../css/1.css">
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  
+  <form>
+    <input id="name-input" class="click-effect" type="text" placeholder="Imię..." maxlength="20">
+    <input id="surname-input" class="click-effect" type="text" placeholder="Nazwisko..." maxlength="20">
+    <div id="file-input-container">
+      <label for="file-input">Zdjęcie:</label>
+      <input id="file-input" type="file">
+    </div>
+    <select id="rank-input">
+      <option>Przecwelony</option>
+      <option>Mega Cwel</option>
+      <option>Cwel Imperator</option>
+      <option>Naczelny Cwel</option>
+      <option>Cwelmistrz</option>
+    </select>
+    <button id="screenshot-btn" class="click-effect" type="button">Zapisz PNG</button>
+  </form>
+
+  <div id="card">
+    <img id="photo"> 
+    <div id="info-container">
+      <h1 id="name"></h1>
+      <h1 id="surname"></h1>
+      <h1 id="rank"></h1>
+    </div>
+  </div>
+
+  <script src="../js/1.js"></script>
+  <script src="../js/html2canvas.min.js"></script>
+</body>
+</html>
